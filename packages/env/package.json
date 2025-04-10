@@ -1,0 +1,23 @@
+{
+  "name": "@repo/env",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "with-env tsc",
+    "dev": "with-env tsc --watch",
+    "typecheck": "with-env tsc --noEmit --emitDeclarationOnly false",
+    "with-env": "dotenv -e ../../.env --"
+  },
+  "exports": {
+    ".": "./src/env.ts"
+  },
+  "dependencies": {
+    "@t3-oss/env-core": "^0.11.0",
+    "@t3-oss/env-nextjs": "^0.11.0",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "catalog:node"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "@repo/supabase",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit --emitDeclarationOnly false",
+    "with-env": "dotenv -e ../../.env --",
+    "clean": "rm -rf .turbo node_modules"
+  },
+  "exports": {
+    ".": "./src/*.ts"
+  },
+  "dependencies": {
+    "@repo/env": "workspace:*",
+    "@supabase/supabase-js": "catalog:",
+    "@supabase/ssr": "catalog:",
+    "next": "catalog:next15",
+    "react": "catalog:react19",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "catalog:node",
+    "@types/react": "catalog:react19",
+    "@types/react-dom": "catalog:react19",
+    "typescript": "catalog:"
+  }
+}

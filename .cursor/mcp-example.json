@@ -1,0 +1,43 @@
+{
+  "mcpServers": {
+    "puppeteer": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-puppeteer"]
+    },
+    "fetch": {
+      "command": "uvx",
+      "args": ["mcp-server-fetch"]
+    },
+    "project-db": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-postgres",
+        "YOUR_PROJECT_DB_URL"
+      ]
+    },
+    "agj-db1": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-postgres",
+        "YOUR_AGJ_DB1_URL"
+      ],
+      "env": {
+        "POSTGRES_PROJECT_URL": "YOUR_PROJECT_DB_URL_FOR_AGJ_ENV"
+      }
+    },
+    "browser-tools": {
+      "command": "npx",
+      "args": ["-y", "@agentdeskai/browser-tools-mcp@1.0.11"]
+    },
+    "linear": {
+      "command": "node",
+      "args": [
+        "/Users/williamneves/Documents/coding/git/ib3.solutions/mcp-servers/linear-mcp/build/index.js"
+      ],
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}

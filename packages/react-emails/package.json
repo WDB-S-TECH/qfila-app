@@ -1,0 +1,31 @@
+{
+  "name": "@repo/react-emails",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "dev": "email dev",
+    "export": "email export",
+    "with-env": "dotenv -e ../../.env --"
+  },
+  "exports": {
+    "./emails": "./emails/index.tsx",
+    "./client": "./client/email.ts"
+  },
+  "dependencies": {
+    "@react-email/components": "0.0.34",
+    "@t3-oss/env-core": "^0.11.0",
+    "react": "catalog:react19",
+    "react-dom": "catalog:react19",
+    "resend": "^4.2.0",
+    "dotenv-cli": "^7.1.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "20.14.10",
+    "@types/react": "catalog:react19",
+    "@types/react-dom": "catalog:react19",
+    "react-email": "3.0.7"
+  }
+}
