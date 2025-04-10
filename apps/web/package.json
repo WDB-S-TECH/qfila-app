@@ -7,21 +7,25 @@
     "dev": "pnpm with-env next dev --turbopack",
     "build": "pnpm with-env next build --turbopack",
     "start": "pnpm with-env next start",
+    "clean": "rm -rf .turbo node_modules",
     "typecheck": "tsc --noEmit",
     "with-env": "dotenv -e ../../.env -e .env --"
   },
   "dependencies": {
     "@repo/ui": "workspace:*",
+    "dotenv-cli": "catalog:",
+    "framer-motion": "^12.6.3",
+    "lucide-react": "^0.483.0",
     "next": "catalog:next15",
     "react": "catalog:react19",
     "react-dom": "catalog:react19"
   },
   "devDependencies": {
-    "@repo/ui": "workspace:*",
     "@repo/env": "workspace:*",
-    "@repo/supabase": "workspace:*",
     "@repo/react-emails": "workspace:*",
+    "@repo/supabase": "workspace:*",
     "@repo/typescript-config": "workspace:*",
+    "@repo/ui": "workspace:*",
     "@types/node": "catalog:node",
     "@types/react": "catalog:react19",
     "@types/react-dom": "catalog:react19",
