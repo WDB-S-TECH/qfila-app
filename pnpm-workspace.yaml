@@ -3,6 +3,7 @@ packages:
   - "packages/*"
 
 catalog:
+  arktype: ^2.1.19
   typescript: ^5.7.3
   zod: ^3.23.8
   dayjs: ^1.11.13
@@ -32,6 +33,7 @@ catalogs:
   drizzle:
     drizzle-orm: ^0.41.0
     drizzle-zod: ^0.7.0
+    drizzle-arktype: ^0.1.1
     drizzle-kit: ^0.30.5
     drizzle-seed: ^0.3.1
   trpc:

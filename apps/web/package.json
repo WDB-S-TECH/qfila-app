@@ -12,13 +12,23 @@
     "with-env": "dotenv -e ../../.env -e .env --"
   },
   "dependencies": {
+    "@repo/api": "workspace:*",
+    "@repo/env": "workspace:*",
     "@repo/ui": "workspace:*",
+    "@tanstack/react-query": "^5.28.0",
+    "@tanstack/react-query-devtools": "^5.28.0",
+    "@tanstack/react-query-next-experimental": "^5.71.0",
+    "@trpc/client": "catalog:trpc",
+    "@trpc/react-query": "catalog:trpc",
+    "@trpc/server": "catalog:trpc",
     "dotenv-cli": "catalog:",
     "framer-motion": "^12.6.3",
     "lucide-react": "^0.483.0",
     "next": "catalog:next15",
     "react": "catalog:react19",
-    "react-dom": "catalog:react19"
+    "react-dom": "catalog:react19",
+    "ssr-only-secrets": "^0.1.2",
+    "superjson": "^2.2.2"
   },
   "devDependencies": {
     "@repo/env": "workspace:*",

@@ -1,0 +1,65 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Esse projeto é um Applicativo para gestao de filas de atendimentos presenciais chamado QFilas.
+
+em [PROJECT.md](mdc:docs/PROJECT.md) voce pode entender o projeto melhor, e em [FLUXOS.md](mdc:docs/FLUXOS.md) voce sabe o que as conexoes do projeto em suas funcoes.
+
+A conexao com esse banco, que 'e um postgres 16, 'e feita pela env POSTGRES_PROJECT_URL, usando o drizzle-orm para fazer as querys ao banco de dados.
+
+A linguagem de programacao do projeto sera em portugues para comentarios, funcoes, variaveis. Usaremos ingles para convencoes mundiais, como get, post, delete e outras.
+
+Use sempre que possivel os mcp's que estao a sua disposicao.
+
+## Tech Stack
+
+- **Framework**: Next.js (App Router)
+- **Frontend**: React, Shadcn/ui with Tailwind 4
+- **Backend**: Next.js API Routes
+- **Database**: Supabase Postgres
+- **Authentication**: Postgres Auth
+- **Testing**: Vitest (Unit/Integration) & Playwright (E2E)
+- **Format**: Biome
+- **Linting**: Biome
+- **Package Manager**: pnpm
+- **Build System**: Turborepo (Monorepo)
+- **Code Quality**: Biome, TypeScript
+- **Version Control**: Git with Commitlint
+- **IDE**: VSCode with Cursor AI
+- **AI**: Cursor AI
+
+## UI
+Para UI usando o shadcn/ui monorepo, no repositorio packages/ui. e pode ser acessado na web por @repo/ui/[componente].
+
+Para adicionar um componente, vai para o repositorio consumidor, ex: web, e use o npx shadcn@latest add [componente] que ira criar o componente no repositorio packages/ui e instalar no repositorio consumidor.
+
+## Best Practices
+
+1. Write self-documenting code
+2. Follow DRY principles
+3. Implement proper TypeScript typing
+4. Regular dependency updates
+5. Consistent code formatting
+6. Regular code reviews
+7. Keep documentation updated
+8. Monitor performance metrics
+9. Regular security audits
+10. Proper error handling
+11. Keep documentation updated
+12. Keep knowledge base updated
+13. Keep tests updated
+
+## Thinking Process
+
+1. Understand the problem
+2. Understand the solution
+3. Understand the implementation
+   - If the solution involves api, always look what we have on `packages/api/src/funcs` and `packages/api/src/router`, and look the `ai/docs` for the api documentation.
+   - If the solution involves database, tables and relations, always look what we have on `packages/db/schema`, and look the `ai/docs` for the database documentation.
+   - If the solution involves frontend, always look what we have on `apps/web/src/app`, and look the `ai/docs` for the frontend documentation.
+4. Understand the documentation
+5. Understand the tests
+6. Understand the codebase
+
